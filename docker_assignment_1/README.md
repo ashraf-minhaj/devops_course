@@ -1,9 +1,9 @@
 ## Assignement
-[x] Write a Dockerfile for any project (see [app directory](./app/) )
+- [x] Write a Dockerfile for any project (see [app directory](./app/) )
 
-[x] Make it multistage compatible (see [app directory](./app/) )
+- [x] Make it multistage compatible (see [app directory](./app/) )
 
-[x] Make it multiplatform compatible with buildx
+- [x] Make it multiplatform compatible with buildx
  - generally: `$ docker buildx build --platform linux/amd64 --platform linux/arm64 -t -t ashraftheminhaj/basic_api:v1 .`
  - else -
    ```
@@ -18,17 +18,17 @@
 
    > `docker buildx build --platform=linux/arm64,linux/amd64 --push --tag project-name:latest -f ./project-name/Dockerfile .` This command builds a Docker image using the builder created earlier.
 
-[x] Push the image to the docker hub
+- [x] Push the image to the docker hub
  - used push in the previous step or usually - 
    ```
    docker push ashraftheminhaj/basic_api:v1
    ```
 
-[x] Write commands to Run containers from image
+- [x] Write commands to Run containers from image
  - `docker run -d -p 8080:8080 ashraftheminhaj/basic_api:v1 `
  - `docker run --env-file ./.env .`
 
-[x] Open a shell inside the container
+- [x] Open a shell inside the container
  - `docker run -it -p 8080:8080 ashraftheminhaj/basic_api:v1 bash`
- 
-[x] Submit the git repository with the project, Dockerfile, bash script if any, and documentation
+
+- [x] Submit the git repository with the project, Dockerfile, bash script if any, and documentation
