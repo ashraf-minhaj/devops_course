@@ -8,7 +8,7 @@
 
 from flask import Flask
 
-PORT = 8080
+PORT = 80
 
 # Flask constructor takes module (__name__) as argument.
 app = Flask(__name__)
@@ -19,4 +19,4 @@ def hello_world():
 
 # main driver function
 if __name__ == '__main__':
-	app.run(debug=True, port=PORT)
+	app.run(debug=False, port=PORT, host="0.0.0.0")

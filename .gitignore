@@ -1,0 +1,6 @@
+
+docker_assignment_1/app/*
+!docker_assignment_1/app/Dockerfile
+!docker_assignment_1/app/main.py
+!docker_assignment_1/app/requirements.txt
+# docker_assignment_1/app/.env

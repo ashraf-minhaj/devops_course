@@ -23,6 +23,6 @@ COPY --from=builder /usr/local/lib/python3.10/site-packages /usr/local/lib/pytho
 
 COPY main.py .
 
-EXPOSE 8080
+EXPOSE 80
 
 CMD ["python", "main.py"]

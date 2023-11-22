@@ -9,7 +9,7 @@
    ```
    docker buildx create --use --platform=linux/arm64,linux/amd64 --name multi-platform-builder
    docker buildx inspect --bootstrap
-   docker buildx build --platform linux/amd64 --platform linux/arm64 --push  -t ashraftheminhaj/basic_api:v1 .
+   docker buildx build --platform linux/amd64 --platform linux/arm64,linux/amd64 --push  -t ashraftheminhaj/basic_api:v1 .
    ```
 
    > ` docker buildx create --use --platform=linux/arm64,linux/amd64 --name multi-platform-builder` - This command creates a new builder instance. In this case, it supports both linux/arm64 and linux/amd64 platforms. The --name flag sets a name for the builder- "multi-platform-builder".
@@ -25,7 +25,7 @@
    ```
 
 - [x] Write commands to Run containers from image
- - `docker run -d -p 8080:8080 ashraftheminhaj/basic_api:v1 `
+ - `docker run -d -p 80:80 ashraftheminhaj/basic_api:v1 `
  - `docker run --env-file ./.env .`
 
 - [x] Open a shell inside the container
