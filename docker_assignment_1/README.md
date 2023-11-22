@@ -1,6 +1,8 @@
 ## Assignement
 [x] Write a Dockerfile for any project (see [app directory](./app/) )
+
 [x] Make it multistage compatible (see [app directory](./app/) )
+
 [x] Make it multiplatform compatible with buildx
  - generally: `$ docker buildx build --platform linux/amd64 --platform linux/arm64 -t -t ashraftheminhaj/basic_api:v1 .`
  - else -
@@ -21,9 +23,12 @@
    ```
    docker push ashraftheminhaj/basic_api:v1
    ```
+
 [x] Write commands to Run containers from image
  - `docker run -d -p 8080:8080 ashraftheminhaj/basic_api:v1 `
  - `docker run --env-file ./.env .`
+
 [x] Open a shell inside the container
  - `docker run -it -p 8080:8080 ashraftheminhaj/basic_api:v1 bash`
+ 
 [x] Submit the git repository with the project, Dockerfile, bash script if any, and documentation
